@@ -19,5 +19,13 @@
       (window,document,'script','Eltropy');
       Eltropy.init({domain:'https://ereborfi.uateltropy.com'});
 </script>
+<script>function startSecureChat() { 
+    window.postMessage({ type: "TRIGGER_DIRECT_SECURE_CHAT"}, '*');
+}
+</script>
+<script>function startVideoCall() { 
+    window.postMessage({ type: "TRIGGER_DIRECT_VIDEO_CHAT"}, '*');
+}
+</script>
 </body>
 </html>
