@@ -4,6 +4,12 @@
     --font-family-body: "Lucida Console", sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 /*     GENERAL     */
@@ -67,3 +73,61 @@ h1 {
     transform: scale(1.1);
 }
 
+#video-button {
+    position: absolute;
+    top: 75%;
+    left: 88%;
+    padding: 1em;
+    border-radius: 20px;
+    font-family: var(--font-family-headings);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+
+/*    LOANS      */
+
+#loans-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -5;
+}
+
+#loans-body {
+    background-color: rgba(255, 255, 255, .5);
+    height: 3000px;
+    width: 70vw;
+    max-width: 1200px;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-family-body);
+}
+
+.loans-body-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;  
+    width: 100%;
+}
+
+.loans-body-item {
+    text-align: center;
+}
+
+
+.loans-body-item.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 1;
+
+}
+
+.loans-body-item.li {
+    padding: 1em;
+    list-style-type: none;
+}
