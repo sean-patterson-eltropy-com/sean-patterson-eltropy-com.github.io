@@ -8,8 +8,12 @@
 </head>
 <body>
 
-
-
+<button onclick="startVideoCall()">Start Video Banking</button>
+<script>
+function startVideoCall() {
+      window.postMessage({ type: "TRIGGER_DIRECT_VIDEO_CHAT"}, '*');
+}
+</script>
     <script>
         (function(e,l,t,r,o,p){e[r]=e[r]||{init:function(){e[r].q=arguments}};
               o=l.createElement(t);p=l.getElementsByTagName(t)[0];o.async=1;
