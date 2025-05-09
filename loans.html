@@ -11,6 +11,7 @@
   <p><a href="https://ereborfi.uateltropy.com/branch/instantcall/c0d8ef52-827d-472c-a656-6875512b94bf" target="_blank">Instant video connect link target="_blank"</a></p>
 
 <button onclick="startVideoCall()">Start Video Banking</button>
+<button onclick="startSecureChat()">Start Secure Chat</button>
 <script>
 function startVideoCall() {
       window.postMessage({ type: "TRIGGER_DIRECT_VIDEO_CHAT"}, '*');
@@ -31,5 +32,10 @@ function startVideoCall() {
             window.postMessage({ type: "TRIGGER_DIRECT_VIDEO_CHAT"}, '*');
         }
         </script>
+		<script>
+		function startSecureChat() {
+    window.postMessage({ type: "TRIGGER_DIRECT_SECURE_CHAT"}, '*');
+}
+</script>
 </body>
 </html>
